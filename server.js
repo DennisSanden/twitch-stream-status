@@ -78,7 +78,7 @@ async function checkStreamers(userLogins) {
 
 // API-endpoint för att hämta status för flera streamers på en gång
 app.get('/stream-status', async (req, res) => {
-  const streamers = ['aienia', 'polackentv', 'fieraaa']
+  const streamers = ['aienia', 'polackentv', 'lillibells']
   try {
     const statuses = await checkStreamers(streamers)
     res.json(statuses)
